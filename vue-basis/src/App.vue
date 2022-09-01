@@ -1,12 +1,20 @@
 <template>
+  <my-nav-bar />
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
+  <my-footer />
 </template>
 
+<script setup>
+import MyNavBar from './components/MyNavBar.vue';
+import MyFooter from './components/MyFooter.vue';
+</script>
+
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
