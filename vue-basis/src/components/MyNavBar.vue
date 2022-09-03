@@ -1,9 +1,12 @@
 <script setup>
-const suma = 2 + 2;
+function suma(a, b) {
+  return a + b;
+}
+
 </script>
 
 <template>
-    <h1>This is the NavBar {{suma}}</h1>
+    <h1>This is the NavBar {{suma(3, 5)}}</h1>
 </template>
 
 <style>
